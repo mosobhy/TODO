@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TODO list
+        </title>
+        <style>
+            body
+            {
+                background-image: url("static/nature.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            h1
+            {
+                text-align: center;
+                font-size: 55px;
+                font-weight: bold;
+                color: white;
+            }
+
+            ul
+            {
+                background-color: aliceblue;
+                opacity: 0.6;
+            }
+            ul li
+            {
+                padding-top: 10px;
+                font-size: medium;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>TODO</h1>
+        {% block body %}{% endblock %}
+
+    </body>
+</html>

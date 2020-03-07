@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<form action="/" method="POST">
+    <input name="todo" type="text" placeholder="TODO task">
+    <button>add to my list</button>
+</form>
+
+<ul>
+    {% for task in todo_list %}
+        <li>{{ task }}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}
